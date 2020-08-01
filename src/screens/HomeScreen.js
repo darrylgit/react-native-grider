@@ -1,16 +1,24 @@
 import React from 'react';
 import { Text, StyleSheet, View, Button, TouchableOpacity } from 'react-native';
 
+import CustomButton from '../components/CustomButton';
+import CustomButtom from '../components/CustomButton';
+
 const HomeScreen = ({ navigation }) => {
   return (
     <View>
       <Text style={styles.text}>Hi there!</Text>
-      <View style={styles.button}>
+      <CustomButtom
+        title='Go to Components Demo'
+        route='Components'
+        navigation={navigation}
+      />
+      {/* <View style={styles.button}>
         <Button
           onPress={() => navigation.navigate('Components')}
           title='Go to Components Demo'
         />
-      </View>
+      </View> */}
       <View style={styles.button}>
         <Button
           onPress={() => navigation.navigate('List')}
