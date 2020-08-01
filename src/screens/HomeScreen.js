@@ -5,18 +5,24 @@ const HomeScreen = ({ navigation }) => {
   return (
     <View>
       <Text style={styles.text}>Hi there!</Text>
-      <Button
-        onPress={() => navigation.navigate('Components')}
-        title='Go to Components Demo'
-      />
-      <Button
-        onPress={() => navigation.navigate('List')}
-        title='Go to List Demo'
-      />
-      <Button
-        onPress={() => navigation.navigate('Image')}
-        title='Go to Image Demo'
-      />
+      <View style={styles.button}>
+        <Button
+          onPress={() => navigation.navigate('Components')}
+          title='Go to Components Demo'
+        />
+      </View>
+      <View style={styles.button}>
+        <Button
+          onPress={() => navigation.navigate('List')}
+          title='Go to List Demo'
+        />
+      </View>
+      <View style={styles.button}>
+        <Button
+          onPress={() => navigation.navigate('Image')}
+          title='Go to Image Demo'
+        />
+      </View>
     </View>
   );
 };
@@ -26,7 +32,7 @@ const styles = StyleSheet.create({
     fontSize: 30
   },
   button: {
-    marginBottom: '1em'
+    marginBottom: 10
   }
 });
 
