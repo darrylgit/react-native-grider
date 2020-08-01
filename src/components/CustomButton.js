@@ -1,12 +1,10 @@
 import React from 'react';
 import { View, Text, Button, StyleSheet } from 'react-native';
 
-const CustomButtom = ({ title, route, navigation = false }) => {
-  const navigate = navigation ? navigation.navigate : () => {};
-
+const CustomButtom = ({ title, callback }) => {
   return (
     <View style={styles.button}>
-      <Button onPress={() => navigate(route)} title={title} />
+      <Button onPress={callback} title={title} />
     </View>
   );
 };

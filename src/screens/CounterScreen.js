@@ -1,20 +1,22 @@
 import React, { useState } from 'react';
 import { View, Text, StyleSheet, Button } from 'react-native';
 
+import CustomButtom from '../components/CustomButton';
+
 const CounterScreen = () => {
   let [counter, updateCounter] = useState(0);
 
   return (
     <View>
-      <Button
+      <CustomButtom
         title='Increase'
-        onPress={() => {
+        callback={() => {
           updateCounter(counter + 1);
         }}
       />
-      <Button
+      <CustomButtom
         title='Decrease'
-        onPress={() => {
+        callback={() => {
           updateCounter(counter - 1);
         }}
       />
