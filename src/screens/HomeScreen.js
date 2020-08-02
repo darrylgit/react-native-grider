@@ -27,6 +27,10 @@ const HomeScreen = ({ navigation }) => {
         title='Go to Color Demo'
         callback={() => navigation.navigate('Color')}
       />
+      <CustomButtom
+        title='Go to Square Demo'
+        callback={() => navigation.navigate('Square')}
+      />
     </View>
   );
 };
