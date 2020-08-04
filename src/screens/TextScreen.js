@@ -15,6 +15,11 @@ const TextScreen = () => {
         onChangeText={newValue => setName(newValue)}
       />
       <Text>My name is: {name}</Text>
+      {name.toLowerCase() === "daniel" ? (
+        <Text style={styles.warning}>
+          Your name is not allowed to be Daniel. Get out of here!
+        </Text>
+      ) : null}
     </View>
   );
 };
@@ -25,6 +30,11 @@ const styles = StyleSheet.create({
     padding: 10,
     borderColor: "black",
     borderWidth: 1
+  },
+  warning: {
+    margin: 15,
+    fontSize: 18,
+    color: "red"
   }
 });
 
