@@ -3,12 +3,12 @@ import { View, Text, StyleSheet } from "react-native";
 
 import CustomButton from "./CustomButton";
 
-const ColorCounter = ({ color }) => {
+const ColorCounter = ({ color, onIncrease, onDecrease }) => {
   return (
     <View>
       <Text>{color}</Text>
-      <CustomButton title={`Increase ${color}`} />
-      <CustomButton title={`Decrease ${color}`} />
+      <CustomButton callback={() => onIncrease()} title={`Increase ${color}`} />
+      <CustomButton callback={() => onDecrease()} title={`Decrease ${color}`} />
     </View>
   );
 };
