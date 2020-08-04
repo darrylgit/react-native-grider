@@ -1,7 +1,7 @@
-import React from 'react';
-import { Text, StyleSheet, View, Button, TouchableOpacity } from 'react-native';
+import React from "react";
+import { Text, StyleSheet, View, Button, TouchableOpacity } from "react-native";
 
-import CustomButtom from '../components/CustomButton';
+import CustomButtom from "../components/CustomButton";
 
 const HomeScreen = ({ navigation }) => {
   return (
@@ -9,27 +9,31 @@ const HomeScreen = ({ navigation }) => {
       <Text style={styles.text}>Hi there!</Text>
       <CustomButtom
         title='Go to Components Demo'
-        callback={() => navigation.navigate('Components')}
+        callback={() => navigation.navigate("Components")}
       />
       <CustomButtom
         title='Go to List Demo'
-        callback={() => navigation.navigate('List')}
+        callback={() => navigation.navigate("List")}
       />
       <CustomButtom
         title='Go to Image Demo'
-        callback={() => navigation.navigate('Image')}
+        callback={() => navigation.navigate("Image")}
       />
       <CustomButtom
         title='Go to Counter Demo'
-        callback={() => navigation.navigate('Counter')}
+        callback={() => navigation.navigate("Counter")}
       />
       <CustomButtom
         title='Go to Color Demo'
-        callback={() => navigation.navigate('Color')}
+        callback={() => navigation.navigate("Color")}
       />
       <CustomButtom
         title='Go to Square Demo'
-        callback={() => navigation.navigate('Square')}
+        callback={() => navigation.navigate("Square")}
+      />
+      <CustomButtom
+        title='Go to Text Demo'
+        callback={() => navigation.navigate("Text")}
       />
     </View>
   );
