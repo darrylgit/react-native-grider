@@ -35,6 +35,10 @@ const HomeScreen = ({ navigation }) => {
         title='Go to Text Demo'
         callback={() => navigation.navigate("Text")}
       />
+      <CustomButtom
+        title='Go to Box Demo'
+        callback={() => navigation.navigate("Box")}
+      />
     </View>
   );
 };
